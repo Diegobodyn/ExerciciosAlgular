@@ -1,5 +1,4 @@
-<ul>
-            <li  *ngFor = "let nome of nomes">
-              {{nome}}
+<ul *ngFor = "let nome of nomes let i=index" >
+            <li  > O nome da pessoa é: {{nome}}, e está na posição: {{i+1}}
             </li>
 </ul>
