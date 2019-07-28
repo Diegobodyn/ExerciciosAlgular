@@ -1,7 +1,7 @@
 <ul *ngFor = "let nome of nomes let i=index" >
-            <li  > O nome da pessoa é: {{nome}}, e está na posição: {{i+1}}
-            </li>
+            <li  > O nome da pessoa é: {{nome}}, e está na posição: {{i+1}}</li>
 </ul>
 <P *ngIf="nomes.length == 0">  Nenhum nome encontrado, usando *ngIf</P>
 
 <p [hidden] = "nomes.length > 0" > Nenhum nome encontrado, usando hidden  </p>
+<input  #box placeholder="Digite um nome" (keyup)="buscar(box.value)"/>
