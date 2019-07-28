@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  
+ nomes: string[] = ['joao','maria','jose','pedro','felipe','carlos'];
+
 }
