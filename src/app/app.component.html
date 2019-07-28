@@ -2,3 +2,6 @@
             <li  > O nome da pessoa é: {{nome}}, e está na posição: {{i+1}}
             </li>
 </ul>
+<P *ngIf="nomes.length == 0">  Nenhum nome encontrado, usando *ngIf</P>
+
+<p [hidden] = "nomes.length > 0" > Nenhum nome encontrado, usando hidden  </p>
